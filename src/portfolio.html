@@ -4,81 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiwot's portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--header-->
-    <header id="header" class="fixed">
-      <div class="h-section ">
-          <nav class="navbar center">
-              <ul>
-                  <li><a  href="index.html">Home</a></li>
-                  <li><a  href="about.html">About</a></li>
-                  <li><a  href="resume.html">Resume</a></li>
-                  <li><a class='active' href="portfolio.html">Portfolio</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </nav>
-          <!--social-media links-->
-          <div class="header-social-links">
-              <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <header class="header has-background-pink">
+      <nav class="navbar py-5 is-fixed-top">
+        <div class="column is-3"></div>
+        <div class="navbar-brand is-hidden-desktop-only">
+          <a role="button" onclick="toggleNavbar()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="my-links">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="my-links" class="navbar-menu">
+          <div class="columns navbar-item ">
+            <div class="column  is-3"></div>
+            <a class="navbar-item column is-2 is-size-5 " href="index.html">
+              Home
+            </a>
+            <a class="navbar-item column is-size-5  is-2" href="about.html">
+              About
+            </a>
+            <a class="navbar-item column is-size-5 is-2 " href="resume.html">
+              Resume
+            </a>
+            <a class="navbar-item column is-size-5 is-2 is-active has-text-primary has-text-weight-bold" href="portfolio.html">
+              Portfolio
+            </a>
+            <a class="navbar-item column is-size-5 is-2" href="contact.html">
+              Contact
+            </a>
+            <div class="  column navbar-end"></div>
+            <div class="navbar-burger  columns  column is-5">
+              <a class="navbar-item column is-2 is-size-6" href="https://twitter.com/HiwotAddis8917">
+                <i class="fa fa-twitter-square "></i>
+              </a>
+              <a class="navbar-item column is-2 is-size-6" href="https://t.me/newlife_1010">
+                <i class="fa fa-telegram " ></i>
+              </a>
+              <a class="navbar-item column is-2 is-size-6" href="https://www.linkedin.com/in/hiwot-addis-453139286/">
+                <i class="fa fa-linkedin-square "></i>
+              </a>
+            </div>
           </div>
         </div>
+    </nav>
     </header>
     <!--main-->
-    <main>
-        <h2>Portfolio</h2>
-        <q cite="https://www.goodreads.com/quotes/772887-the-only-way-to-do-great-work-is-to-love">
-          The only way to do great work is to love what you do.<br><em>- Steve Jobs</em>
-        </q>
-        <p>Welcome to my portfolio section. Here you can find my past works and projects. I hope you enjoy browsing through them.</p>
-        <div>
-            <ul>
-                <li>All</li>
-                <li>UI/UX</li>
-                <li>Web</li>
-            </ul>
-          </div>
-
-        <div>
-          <section>
-            <figure>
-              <a href="https://www.apple.com/"><img src="images/applepage.png"  alt="" ></a>
-              <figcaption><h5>Apple page</h5></figcaption>
-            </figure>
-            <figure>
-              <a href="portfolio-section-projects/puppy-page/puppy.html"><img src="images/puppy-lovers-page-design.jpg" " alt=""></a>
-              <figcaption><h5>Puppy page</h5></figcaption>
-            </figure>
-            <figure>
-              <a href="https://www.figma.com/file/Pf9fGOGKeA9E6seM3Nito9/own-page?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/ownpage.png"  alt=""></a>
-              <figcaption><h5>coffee menu design</h5></figcaption>
-            </figure>
-          </section>
-          <section>
-            <figure>
-              <a href="https://www.figma.com/file/UtrnR0VUP2vpBwN73JIpqm/Untitled?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/sport.png"  alt="" ></a>
-              <figcaption><h5>boxchampy</h5></figcaption>
-            </figure>
-            <figure>
-              <a href="https://www.southernmostbeachresort.com/dine/southernmost-beach-cafe/"><img src="images/sothermost-resourt.png"  alt=""></a>
-              <figcaption><h5>southernmost-beach-cafe</h5></figcaption>
-            </figure>
-            <figure>
-              <a href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&mode=design&t=1kesSMkd1ws4VPka-1"><img src="images/loginpage.png" alt=""></a>
-              <figcaption><h5>login page</h5></figcaption>
-            </figure>
-          </section>
+    <main class="section mt-6">
+      <h2 class="title is-2 has-text-centered is-uppercase pt-6">Portfolio</h2>
+      <q cite="https://www.goodreads.com/quotes/772887-the-only-way-to-do-great-work-is-to-love" >
+        <p class="has-text-centered is-size-5-desktop"><em>"The only way to do great work is to love what you do." <br> - Steve Jobs</em></p></q>
+      <p class="subtitle has-text-centered">Welcome to my portfolio section. Here you can find my past works and projects. I hope you enjoy browsing through them.</p>
+      <div class=" has-text-centered is-centered py-5 is-variable ">
+        <span class=" title has-text-primary is-5">All</span>
+        <span class="title has-text-primary is-5">UI/UX</span>
+        <span class="title has-text-primary is-5">Web</span>
+      </div>
+    
+      <div class="px-1">
+        <div class=" columns is-4">
+          <figure class="image is-2by2 column" >
+            <a href="https://www.apple.com/">
+              <img src="images/applepage.png" alt="">
+            </a>
+            <figcaption class="subtitle has-text-primary is-5">Web: Apple page</figcaption>
+          </figure>
+          <figure class="image is-2by2 column">
+            <a href="images/puppy-lovers-page-design.jpg">
+              <img src="images/puppy-lovers-page-design.jpg" alt="">
+            </a>
+            <figcaption class="subtitle is-5 has-text-primary">Web: Puppy page</figcaption>
+          </figure>
+          <figure class="image is-2by2 column">
+            <a href="https://www.figma.com/file/Pf9fGOGKeA9E6seM3Nito9/own-page?type=design&mode=design&t=1kesSMkd1ws4VPka-1">
+              <img src="images/ownpage.png" alt="">
+            </a>
+            <figcaption class="subtitle is-5 has-text-primary">UI/UX: Coffee menu design</figcaption>
+          </figure>
         </div>
-        
+        <div class=" is-4 columns">
+          <figure class="image is-2by2 column">
+            <a href="https://www.figma.com/file/UtrnR0VUP2vpBwN73JIpqm/Untitled?type=design&mode=design&t=1kesSMkd1ws4VPka-1">
+              <img src="images/sport.png" alt="">
+            </a>
+            <figcaption class="subtitle is-5 has-text-primary">UI/UX: Boxchampy</figcaption>
+          </figure>
+          <figure class="image is-2by2 column">
+            <a href="https://www.southernmostbeachresort.com/dine/southernmost-beach-cafe/">
+              <img src="images/sothermost-resourt.png" alt="">
+            </a>
+            <figcaption class="subtitle is-5 has-text-primary">UI/UX: Southernmost Beach Cafe</figcaption>
+          </figure>
+          <figure class="image is-2by2 column">
+            <a href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&mode=design&t=1kesSMkd1ws4VPka-1">
+              <img src="images/loginpage.png" alt="">
+            </a>
+            <figcaption class="subtitle is-size-5-desktop has-text-primary">UI/UX: Login page</figcaption>
+          </figure>
+        </div>
+      </div>
     </main>
-    <!--footer-->
-    <footer>
-        <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
-    </footer>
+    
+    <footer id="footer" class="footer has-background-grey lighter">
+      <div class="content has-text-centered">
+          <p class="has-text-white">
+              &copy; Copyright 2023 <strong class="has-text-white">Hiwot</strong>. All Rights Reserved.
+            </p>
+      </div>
+  </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

@@ -3,81 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact Hiwot</title>
+    <title>Hiwot's portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
 </head>
-<body>
-    <header id="header" class="fixed">
-        <div class="h-section ">
-            <nav class="navbar center">
-                <ul>
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a  href="about.html">About</a></li>
-                    <li><a  href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a class='active' href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!--social-media links-->
-            <div class="header-social-links">
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            </div>
+<body >
+    <!--header-->
+    <header class="header has-background-pink">
+      <nav class="navbar py-5 is-fixed-top">
+        <div class="column is-3"></div>
+        <div class="navbar-brand is-hidden-desktop-only">
+          <a role="button" onclick="toggleNavbar()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="my-links">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        
-    </header>
+        <div id="my-links" class="navbar-menu">
+          <div class="columns navbar-item ">
+            <div class="column column is-3"></div>
+            <a class="navbar-item column is-2 is-size-5 " href="index.html">
+              Home
+            </a>
+            <a class="navbar-item column is-size-5  is-2" href="about.html">
+              About
+            </a>
+            <a class="navbar-item column is-size-5 is-2 " href="resume.html">
+              Resume
+            </a>
+            <a class="navbar-item column is-size-5 is-2 " href="portfolio.html">
+              Portfolio
+            </a>
+            <a class="navbar-item column is-size-5 is-2 is-active has-text-primary has-text-weight-bold" href="contact.html">
+              Contact
+            </a>
+            <div class="  column navbar-end"></div>
+            <div class="navbar-burger  columns  column is-5">
+              <a class="navbar-item column is-2 is-size-6" href="https://twitter.com/HiwotAddis8917">
+                <i class="fa fa-twitter-square "></i>
+              </a>
+              <a class="navbar-item column is-2 is-size-6" href="https://t.me/newlife_1010">
+                <i class="fa fa-telegram " ></i>
+              </a>
+              <a class="navbar-item column is-2 is-size-6" href="https://www.linkedin.com/in/hiwot-addis-453139286/">
+                <i class="fa fa-linkedin-square "></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
 
     <!--main-->
-    <main>
-        <h2>Contact</h2>
-        <div>
-            <section>
-                <div>
-                    <h4>Location:</h4>
-                    <p>2R2J+M5H, Goro, Ethiopia</p>
+    <main class="contacts-main section px-6 mt-6">
+        <h2 class="title is-2 has-text-centered is-uppercase pt-6">Contact</h2>
+        <div class="contact-content columns ">
+          <section class="column is-half mr-6 box px-4">
+            <div class="information ml-1 ">
+              <div class="location mb-5">
+                <h4 class="title is-5"><i class="fa fa-map-marker has-text-primary mr-4" aria-hidden="true"></i> Location:</h4>
+                <p>2R2J+M5H, Goro, Ethiopia</p>
+              </div>
+              <div class="email mb-5">
+                <h4 class="title is-5"><i class="fa fa-envelope-o has-text-primary mr-4" aria-hidden="true"></i> Email:</h4>
+                <p>addishiwot963@gmail.com</p>
+              </div>
+              <div class="call mb-5">
+                <h4 class="title is-5"><i class="fa fa-mobile has-text-primary mr-4" aria-hidden="true"></i> Call:</h4>
+                <p>+251 961 256116</p>
+              </div>
+              <div class="iframe-container mt-6 is-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9551525801999!2d38.82808179196432!3d9.000525399929563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b6053e87c49%3A0x5752c9d2f249c0ce!2sAbel%20wood%20and%20metal%20manufacturing!5e0!3m2!1sen!2sus!4v1700834094906!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"  width="100%"></iframe>
+              </div>
+            </div>
+          </section>
+          <form action="#" class="column is-half box px-6 mr-6" onsubmit="sendEmail(); reset(); return false">
+            <div class="columns">
+              <div class="field column">
+                <label for="name" class="label">Your Name</label>
+                <div class="control">
+                  <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required>
                 </div>
-                <div>
-                    <h4>Email:</h4>
-                    <p>addishiwot963@gmail.com</p>
+              </div>
+              <div class="field column">
+                <label for="email" class="label">Your Email</label>
+                <div class="control">
+                  <input type="email" name="email" id="email" class="input" placeholder="Enter your email" required>
                 </div>
-                <div>
-                    <h4>Call:</h4>
-                    <p>+251 961 256116</p>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9551525801999!2d38.82808179196432!3d9.000525399929563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b6053e87c49%3A0x5752c9d2f249c0ce!2sAbel%20wood%20and%20metal%20manufacturing!5e0!3m2!1sen!2sus!4v1700834094906!5m2!1sen!2sus" width="1850" height=300 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-                
-            </section>
-            <form action="#">
-                <div>
-                    <div>
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name"  id="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="subject">Subject</label>
-                    <input type="text"  name="subject" id="subject" required>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label for="subject" class="label">Subject</label>
+              <div class="control">
+                <input type="text" name="subject" id="subject" class="input" placeholder="Subject" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message" class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" name="message" id="message" rows="10" placeholder ="Enter your text here" required></textarea>
+              </div>
+            </div>
+            <div class="field is-centered">
+              <div class="control has-text-centered">
+                <button type="submit" class="button is-primary ">Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
-    </main>
+      </main>
+      
+      <footer id="footer" class="footer has-background-grey lighter">
+        <div class="content has-text-centered">
+          <p class="has-text-white">
+            &copy; Copyright 2023 <strong class="has-text-white">Hiwot</strong>. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+      <script src=" https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 
+      <script src="../javascript/script.js"></script>
 
-    <!--footer-->
-    <footer>
-        <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
-    </footer>  
 </body>
 </html>

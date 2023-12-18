@@ -6,44 +6,70 @@
     <title>About Hiwot</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
     <!--header-->
-    <header id="header" class="fixed">
-        <div class="h-section">
-            <nav class="navbar center">
-                <ul>
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a class='active' href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!--social-media links-->
-            <div class="header-social-links">
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <header class="header">
+        <nav class="navbar py-5 is-fixed-top ">
+          <div class="column is-3"></div>
+          <div class="navbar-brand is-hidden-desktop-only">
+            <a role="button" onclick="toggleNavbar()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="my-links">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="my-links" class="navbar-menu ">
+            <div class="columns navbar-item ">
+                <div class="column column is-3"></div>
+                <a class="navbar-item column is-2 is-size-5 " href="index.html">
+                  Home
+                </a>
+                <a class="navbar-item column is-size-5 is-active has-text-primary has-text-weight-bold is-2" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item column is-size-5 is-2" href="resume.html">
+                  Resume
+                </a>
+                <a class="navbar-item column is-size-5 is-2" href="portfolio.html">
+                  Portfolio
+                </a>
+                <a class="navbar-item column is-size-5 is-2" href="contact.html">
+                  Contact
+                </a>
+                <div class="  column navbar-end"></div>
+                <div class="navbar-burger column columns   is-5">
+                  <a class="navbar-item column is-2 is-size-6" href="https://twitter.com/HiwotAddis8917">
+                    <i class="fa fa-twitter-square "></i>
+                  </a>
+                  <a class="navbar-item column is-2 is-size-6" href="https://t.me/newlife_1010">
+                    <i class="fa fa-telegram " ></i>
+                  </a>
+                  <a class="navbar-item column is-2 is-size-6" href="https://www.linkedin.com/in/hiwot-addis-453139286/">
+                    <i class="fa fa-linkedin-square "></i>
+                  </a>
+                </div>
             </div>
-        </div>  
+          </div>
+      </nav>
     </header>
 
     <!--main-->
-    <main id="main" class="about">
-        <h2 class="section-title">About</h2>
-        <article class="display-flex">
-            <img src="images/mine2.jpg" alt="my photo">
-            <section>
-                <h3>Software Engineer and UI/UX Designer</h3>
-                <p>I am passionate about creating innovative and user-friendly software solutions. I have experience in designing and developing software applications that are both functional and aesthetically pleasing. My expertise in software engineering and UI/UX design allows me to create products that are not only visually appealing but also intuitive and easy to use.</p>
-                <blockquote cite="https://en.wikipedia.org/wiki/Software_engineering">
-                    <p><em>A software engineer is a person who applies the engineering design process to design, develop, test, maintain, and evaluate computer software.The term programmer is sometimes used as a synonym, but may emphasize software implementation over design and can also lack connotations of engineering education or skills.</em></p>
+    <main id="main" class="about mt-6 pt-6 ">
+        <h2 class="section-title has-text-centered title is-2 is-uppercase pt-6">About</h2>
+        <article class="container columns px-2 is-centered">
+            <div class="my-photo column"><img src="images/mine2.jpg" alt=""></div>
+            <section class="article-section is-size-5-desktop column">
+                <h3 class="h3 title is-4">Software Engineer and UI/UX Designer</h3>
+                <p class="description">I am passionate about creating innovative and user-friendly software solutions. I have experience in designing and developing software applications that are both functional and aesthetically pleasing. My expertise in software engineering and UI/UX design allows me to create products that are not only visually appealing but also intuitive and easy to use.</p>
+                <blockquote>
+                    <p><em>A software engineer is a person who applies the engineering design process to design, develop, test, maintain, and evaluate computer software. The term programmer is sometimes used as a synonym, but may emphasize software implementation over design and can also lack connotations of engineering education or skills.</em></p>
                 </blockquote>
-                <div>
-                    <div>
-                        <table>
+                <div class="container">
+                    <div class="section1 columns mt-3">
+                        <table class="table column">
                             <tr>
                                 <td><strong>Birthday:</strong></td>
                                 <td><span>1 May 1995</span></td>
@@ -57,40 +83,41 @@
                                 <td><span>21</span></td>
                             </tr>
                         </table>
-                    </div>
-                    <address>
-                        <table>
-                            <tr>
-                              <td><strong>City:</strong></td>
-                              <td><span>Addis Ababa, Ethiopia</span></td>  
-                            </tr>
+                        <table class="table column mb-3">
                             <tr>
                                 <td><strong>Phone:</strong></td>
-                                <td><span>+251 961 256116</span></td>
+                                <td><span>+251 961256116</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>City:</strong></td>
+                                <td><span>Addis Ababa, Ethiopia</span></td>
                             </tr>
                             <tr>
                                 <td><strong>Email:</strong></td>
                                 <td><span>addishiwot963@gmail.com</span></td>
-                            </tr>  
+                            </tr>
                         </table>
-                    </address>
-                </div>  
+                    </div>
+                    <!--Hobbies-->
+                <section class="main__hobbies mt-3 mb-6">
+                    <h3 class="main__h3 title is-4">Hobbies</h3>
+                    <video preload="auto"  controls autoplay loop poster="https://previews.123rf.com/images/rawpixel/rawpixel1812/rawpixel181200509/112892888-hands-holding-hobbies-word-in-balloon-letters.jpg">
+                        <source src="images/hobbies-5uos8bn4_rSfj6ElC.mp4">
+                    </video>
+                </section>
+                </div>
             </section>
         </article>
-        <!--Hobbies-->
-        <section>
-            <h3>Hobbies</h3>
-            <video width="320" height="240" preload="auto"  controls autoPlay loop  poster="https://previews.123rf.com/images/rawpixel/rawpixel1812/rawpixel181200509/112892888-hands-holding-hobbies-word-in-balloon-letters.jpg">
-                <source src="resources/hobbies-5uos8bn4_rSfj6ElC.mp4" >
-              </video>
-        </section>
-        
     </main>
+    
     <!--footer-->
-    <footer id="footer">
-        <div>
-            <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
+    <footer class="footer has-background-grey lighter mb-0">
+        <div class="content has-text-centered">
+            <p class="has-text-white">
+                &copy; Copyright 2023 <strong class="has-text-white">Hiwot</strong>. All Rights Reserved.
+              </p>
         </div>
     </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

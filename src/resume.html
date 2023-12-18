@@ -3,89 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiwot's resume</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Hiwot's portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--header-->
-    <header id="header" class="fixed">
-        <div class="h-section ">
-            <nav class="navbar center">
-                <ul>
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a  href="about.html">About</a></li>
-                    <li><a class='active' href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!--social-media links-->
-            <div class="header-social-links">
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <header class="header has-background-pink">
+        <nav class="navbar py-5 is-fixed-top">
+          <div class="column is-3"></div>
+          <div class="navbar-brand is-hidden-desktop-only">
+            <a role="button" onclick="toggleNavbar()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="my-links">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="my-links" class="navbar-menu">
+            <div class="columns navbar-item ">
+                <div class=" column is-3"></div>
+                <a class="navbar-item column is-2 is-size-5 " href="index.html">
+                  Home
+                </a>
+                <a class="navbar-item column is-size-5  is-2" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item column is-size-5 is-2 is-active has-text-primary has-text-weight-bold" href="resume.html">
+                  Resume
+                </a>
+                <a class="navbar-item column is-size-5 is-2" href="portfolio.html">
+                  Portfolio
+                </a>
+                <a class="navbar-item column is-size-5 is-2" href="contact.html">
+                  Contact
+                </a>
+                <div class="  column navbar-end"></div>
+                <div class="navbar-burger  columns  column is-5">
+                  <a class="navbar-item column is-2 is-size-6" href="https://twitter.com/HiwotAddis8917">
+                    <i class="fa fa-twitter-square "></i>
+                  </a>
+                  <a class="navbar-item column is-2 is-size-6" href="https://t.me/newlife_1010">
+                    <i class="fa fa-telegram " ></i>
+                  </a>
+                  <a class="navbar-item column is-2 is-size-6" href="https://www.linkedin.com/in/hiwot-addis-453139286/">
+                    <i class="fa fa-linkedin-square "></i>
+                  </a>
+                </div>
             </div>
-        </div>
-        
+          </div>
+      </nav>
     </header>
     <!--main-->
-    <main>
-        <h2>Resume</h2>
-        <div>
-            <!--education and experience-->
-            <section>
-                <div>
-                    <h3>Education</h3>
-                    <div>
-                        <h4>Bachelor of Science</h4>
+    <main class="section mt-6">
+        <h2 class="title is-2 has-text-centered is-uppercase pt-6">Resume</h2>
+        <div class="columns">
+            <section class="column">
+                <div class="box">
+                    <h3 class="title is-3">Education</h3>
+                    <div class="box">
+                        <h4 class="title is-4 has-text-primary">Bachelor of Science</h4>
                         <ul>
-                            <li><h4>Addis Ababa Institute of Technology</h4>
-                                <em>School of Information Technology and Engineering</em> <br>
-                                <h5>May 2022 - Present</h5></li>
-                        </ul>    
+                            <li>
+                                <h4 class="title is-5">Addis Ababa Institute of Technology</h4>
+                                <em class="is-size-5">School of Information Technology and Engineering</em>
+                                <h5 class="is-size-6 has-text-primary">May 2022 - Present</h5>
+                            </li>
+                        </ul>
                     </div>
     
-                    <div>
-                        <h4>Highchool Diploma</h4>
+                    <div class="box">
+                        <h4 class="title is-4 has-text-primary">Highschool Diploma</h4>
                         <ul>
-                            <li><h4>Vision Academy  | <em>Addis Ababa, Ethiopia</em></h4>
-                                <h5>September 2020 -2021</h5></li>
-                        </ul> 
-                    </div>       
+                            <li>
+                                <h4 class="title is-5">Vision Academy | <em>Addis Ababa, Ethiopia</em></h4>
+                                <h5 class="is-size-6 has-text-primary">September 2020 - 2021</h5>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
     
-                <div>
-                    <h3>Experience</h3>
-                    <h4>UI/UX Designer</h4>
-                    <ul>
-                        <li>Intern at <strong>RDX Delta Rabbit</strong> start-up company <br>
-                            <h5>July 2023 - September 2023</h5></li>
-                    </ul>   
+                <div class="box">
+                    <h3 class="title is-3">Experience</h3>
+                    <div class="box">
+                        <h4 class="title is-4 has-text-primary">UI/UX Designer</h4>
+                        <ul>
+                            <li class="title is-5">
+                                Intern at <span class="has-text-weight-bold">RDX Delta Rabbit</span> start-up company
+                                <h5 class="is-size-6 has-text-primary">July 2023 - September 2023</h5>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-
-            <!--skills-->
-            <section>
-                <h3>Skills</h3>
-                <div>
-                    <span><abbr title="Hyper text markup language">HTML</abbr><em>100%</em></span>
-                </div>
-                <div>
-                    <span><abbr title="Cascading Style Sheets"></abbr> CSS <em>90%</em></span>
-                </div>
-                <div>
-                   <span>JavaScript <em>70%</em></span> 
+    
+            <section class="column">
+                <div class="box">
+                    <h3 class="title is-3">Skills</h3>
+                    <div class="content">
+                        <p>
+                            <strong>HTML</strong> <em>100%</em>
+                        </p>
+                        <progress class="progress is-primary" value="100" max="100"></progress>
+                        <p>
+                            <strong>CSS</strong> <em>90%</em>
+                        </p>
+                        <progress class="progress is-primary" value="90" max="100"></progress>
+                        <p>
+                            <strong>JavaScript</strong> <em>70%</em>
+                        </p>
+                        <progress class="progress is-primary" value="70" max="100"></progress>
+                    </div>
                 </div>
             </section>
-        </div> 
+        </div>
     </main>
-
-    <!--footer-->
-    <footer>
-        <p>&copy; Copyright <strong><span>Hiwot</span></strong>. All Rights Reserved</p>
-    </footer>
     
+    <footer id="footer" class="footer has-background-grey lighter">
+        <div class="content has-text-centered">
+            <p class="has-text-white">
+                &copy; Copyright 2023 <strong class="has-text-white">Hiwot</strong>. All Rights Reserved.
+              </p>
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
